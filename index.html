@@ -571,7 +571,7 @@ Happy Republic Day Day!<br />
 			
         </div>
  </body>
-
+<!--
 <center>
  <a class="TechnicalArp1" href="https://www.facebook.com/sharer/sharer.php?u=yoursiteurl" target="_blank" title="Share this post on Facebook" class="facebook">
 	<img alt="www.erpankaj.live" alt="www.erpankaj.live"   width="22px" height="22px" src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/social-facebook-icon.png"/>  
@@ -581,14 +581,32 @@ Happy Republic Day Day!<br />
 </center>
  <center>
    <a class="TechnicalArp" href="whatsapp://send?text= ????  *Click on This Link & Enter Name to Send Republic Day Wishes* ?? *YourSiteLink.com*">
-<!--<img alt="www.erpankaj.live" alt="www.erpankaj.live" width="25px" height="25px" src="https://i.imgur.com/fcqTtzV.png"/>  -->
+  <img alt="www.erpankaj.live" alt="www.erpankaj.live" width="25px" height="25px" src="https://i.imgur.com/fcqTtzV.png"/>  
  <b class="hny-txt" style="font-size: 26px;">Share on Whatsapp</b>  
  <img alt="www.erpankaj.live" width="25px" height="25px" src="https://i.imgur.com/fcqTtzV.png"/>
  </a></center>
- 
+ -->
 </script>
+<center>
+<!-- WhatsApp Share Button -->
+<button onclick="shareOnWhatsApp()">Share on WhatsApp</button>
 
+<!-- Facebook Share Button -->
+<button onclick="shareOnFacebook()">Share on Facebook</button>
+</center>
+	  
+<script>
+    // JavaScript functions to handle sharing on WhatsApp and Facebook
+    function shareOnWhatsApp() {
+        var urlToShare = encodeURIComponent(window.location.href);
+        window.open('https://api.whatsapp.com/send?text=' + urlToShare, '_blank');
+    }
 
+    function shareOnFacebook() {
+        var urlToShare = encodeURIComponent(window.location.href);
+        window.open('https://www.facebook.com/sharer/sharer.php?u=' + urlToShare, '_blank');
+    }
+</script>
 
 
 <!--doodle script-->
